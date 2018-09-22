@@ -121,3 +121,13 @@ origin = 'b'
 print("origin => ", origin)
 print("string.replace(origin,new) => ", string.replace(origin,new))
 print('------------------------')
+
+#split the string by separactor: string.split(separactor, separate times)
+print("string => ", string)
+
+newString = string.split(" ", 3);
+print("separate string => ", newString);
+
+string = 'f++d+'
+newString = string.split("+");
+print("separate string => ", newString);
