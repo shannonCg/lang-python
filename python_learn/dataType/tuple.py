@@ -1,4 +1,4 @@
-#tuple is similar to list; that is, they are both in order.
+#Tuple is similar to list; that is, they are both in order.
 #However unlike list, tuple is immutable. We can't add, delete element from tuple or sort them
 
 #define tuple

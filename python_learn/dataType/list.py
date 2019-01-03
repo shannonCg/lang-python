@@ -1,4 +1,4 @@
-#list and string are almost similarly,
+#List and string are almost similarly,
 # that is, index, len, slice and membership operators used on list also suitable for string
 #but the big different from list and string is list is mutable and string is immutable.
 
