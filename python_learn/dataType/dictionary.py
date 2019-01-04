@@ -27,6 +27,14 @@ print("search dictionary value by key 'Taipei':", population.get('Taipei'))
 #print("search dictionary value by key 'Taipei':", population['Taipei'])
 print('')
 
+#nest dictionary
+elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
+            'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}}
+print("dictionary is:", elements)
+elements ['hydrogen']['is_noble_gas'] = False
+elements ['helium']['is_noble_gas'] = True
+print("Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries:", elements)
+
 #identity operator( is , is not ) vs. comparison operators( != , == )
 a = [1, 2, 3]
 b = a
@@ -39,11 +47,3 @@ print('a is b', a is b)
 print('a == c', a == c)
 print('a is c', a is c)
 print('')
-
-#nest dictionary
-elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
-            'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}}
-print("dictionary is:", elements)
-elements ['hydrogen']['is_noble_gas'] = False
-elements ['helium']['is_noble_gas'] = True
-print("Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries:", elements)
