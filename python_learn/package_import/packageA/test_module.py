@@ -42,5 +42,5 @@
 # from python_learn.package_import.packageA.sub_package_of_packageA.sub_packageA_module import printLocation
 # printLocation()
 #[R] way (not work in python3)
-from .sub_package_of_packageA.sub_packageA_module import printLocation
-printLocation()
+# from .sub_package_of_packageA.sub_packageA_module import printLocation
+# printLocation()
