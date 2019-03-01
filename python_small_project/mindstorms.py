@@ -1,4 +1,5 @@
 import turtle
+import inspect
 
 def draw_square(turtle_pen):
     for i in range(4):
@@ -89,3 +90,9 @@ def draw_triangle_flower():
 #draw_pattern()
 # draw_square_circle()
 draw_triangle_flower()
+
+
+#the way to see source code
+# import inspect
+# lines = inspect.getsource(turtle)
+# print(lines)
