@@ -38,4 +38,18 @@ hunger_games = media.Movie("Hunger Games",
                              "https://www.youtube.com/watch?v=mfmrPu43DF8")
 
 movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
-fresh_tomatoes.open_movies_page(movies)
+# open movies page
+# fresh_tomatoes.open_movies_page(movies)
+
+#access class variable
+print(media.Movie.VALID_RATINGS)
+print(toy_story.VALID_RATINGS)
+print(avatar.VALID_RATINGS)
+school_of_rock.VALID_RATINGS[1] = "GG"
+print(toy_story.VALID_RATINGS)
+print(avatar.VALID_RATINGS)
+
+#call python pre-defined variable
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
