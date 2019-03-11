@@ -23,3 +23,6 @@ print()
 with open("./my_file.txt", 'r') as file:
     file_data = file.read()
     print(file_data)
+
+print("hello", end=" ")
+print("hi", end="")
