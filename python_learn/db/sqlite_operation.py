@@ -1,7 +1,11 @@
 import sqlite3
 
-con = sqlite3.connect('D:/system/SQLite/scores.db')
+#connect to the database;if the database not existed, the new one will be created
+con = sqlite3.connect('scores.db')
 cur = con.cursor()
+
+# cur.execute('CREATE TABLE student (stdno integer, name text, PRIMARY KEY(''stdno''))')
+# con.commit()
 
 stdno = 1
 name = '王小明'
