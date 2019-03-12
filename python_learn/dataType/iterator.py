@@ -11,14 +11,14 @@ print(my_range(5))
 print(list(my_range(5)))
 for i in my_range(5):
     print(i)
-print()
+print("--------------")
 
 # Generator expression
 a_list = [x ** 2 for x in range(5)]
 print(a_list)
 a_iterator = (x ** 2 for x in range(5))
 print(a_iterator)
-print()
+print("--------------")
 
 # Add Iterator behavior to your own class
 class Reverse:
@@ -42,8 +42,7 @@ class Reverse:
         self.index -= 1
         return self.data[self.index]
 
-rev = Reverse('spam')
-print(iter(rev))
+rev = Reverse(['spam', 'apple'])
 for i in rev:
     print(i)
-print()
+print("------------")
