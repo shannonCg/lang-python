@@ -1,4 +1,5 @@
 import sqlite3
+import collections
 
 #connect to the database;if the database not existed, the new one will be created
 con = sqlite3.connect('scores.db')
@@ -28,9 +29,16 @@ students = [(3, '美美'),
 #search data
 results = cur.execute("select * from student;")
 print("return type of the execute function", type(results))
-
+results = list(results)
+print(results)
+#tuple way
 for row in results:
     print('No {}: {}'.format(row[0], row[1]))
+print("----------------")
+#namedtuple way
+Student = collections.namedtuple('Student', ['stdno', 'name'])
+for student in map(Student._make, results):
+    print('No {}: {}'.format(student.stdno, student.name))
 print("----------------")
 
 results = cur.execute("select * from student;")
