@@ -18,6 +18,7 @@ if not os.path.exists(dir_path):
 
 #find all tags <img>
 imgs = sp.find_all('img')
+print(imgs)
 for img in imgs:
     img_url = img.get('src')
     if img_url and ('.png' in img_url or '.jpg' in img_url):
