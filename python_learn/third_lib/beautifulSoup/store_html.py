@@ -31,7 +31,7 @@ def store_information_in_html(contents):
     html_file = pre_html + post_html.format(body=body)
 
     # create directory to store images
-    dir_path = "./files"
+    dir_path = r"C:/Users/user/files"
     if not os.path.exists(dir_path):
         os.mkdir(dir_path)
         print("create directory successfully!")
